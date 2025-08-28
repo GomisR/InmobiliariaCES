@@ -1,0 +1,829 @@
+<<<<<<< HEAD
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #111827;
+}
+
+nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    margin-left: 1rem;
+    color: #047857;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero {
+    background-color: #34d399;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+section.info {
+    background-color: #dbeafe;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+section.info div {
+    flex: 1;
+    min-width: 300px;
+}
+
+section.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+section.contact {
+    background-color: #bfdbfe;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+section.contact form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer {
+    background-color: #93c5fd;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+label {
+    font-size: 0.875rem;
+    display: block;
+=======
+/* Titulo */
+.page-index .titulo {
+    position: relative;
+    background-image: url('/storage/images/index/Zaragoza-1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.page-index #TituloPrincipal {
+    font-size: 4rem;
+    color: #00f7ff;
+    text-shadow:
+        0 0 4px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff;
+    animation: parpadeoNeon 4s infinite ease-in-out;
+}
+
+/* Fondo imagen */
+.page-index .titulo::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.42);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+}
+
+.page-index .titulo > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Eslogan */
+.page-index #Eslogan {
+    font-size: 1.8rem;
+    color: #74C2E1;
+    text-align: center;
+    margin: 2rem auto;
+    font-weight: 400;
+}
+
+/* Solo CES con neon animado */
+.page-index #Ces {
+    color: #74C2E1;
+    text-shadow:
+        0 0 4px #74C2E1,
+        0 0 10px #74C2E1,
+        0 0 20px #74C2E1;
+    animation: parpadeoNeon 4s infinite ease-in-out;
+    font-weight: bold;
+}
+
+
+/* titulo */
+.page-index .titulo {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    background-color: #0191C8;
+}
+
+/* Secciones */
+.page-index #info-mano,
+.page-index #edificio-ventajas,
+.page-index #contacto {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+/* Info izq imagen drecha*/
+.page-index .info,
+.page-index .imagenMano {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.page-index .info h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.page-index .info {
+    padding: 3rem;
+    color: #2c3e50;
+    background-color: #e1fafa;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.page-index .info div > * {
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.page-index .info p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+/* Edificio */
+.page-index .edificioAlto{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* ventajas */
+.page-index .ventajas {
+    width: 50%;
+    float: right;
+    padding: 3rem;
+    background-color: #e1fafa;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.page-index .ventajas h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 3rem;
+}
+
+.page-index .ventajas ul li {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Nosotras */
+.page-index #Nosotras {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 1000px;
+    cursor: pointer;
+    position: relative;
+    background-color: #e1fafa;
+}
+
+.page-index .contenedorGirado {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+.page-index .contenedorGirado.girado {
+    transform: rotateY(180deg);
+}
+
+.page-index .imagenNosotras,
+.page-index .textoNosotras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.page-index .imagenNosotras img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-index #TituloNosotrasAnimado {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: #00f7ff;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 20px #00f7ff;
+    font-weight: bold;
+    z-index: 10;
+    text-align: center;
+    pointer-events: none;
+    animation: pulsoNeon 2.5s ease-in-out infinite;
+}
+
+/* Animacion texto giratorio */
+@keyframes pulsoNeon {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        text-shadow: 0 0 3px #00f7ff, 0 0 5px #00f7ff, 0 0 20px #00f7ff;
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.1);
+        text-shadow: 0 0 3px #00f7ff, 0 0 15px #00f7ff, 0 0 40px #00f7ff;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        text-shadow: 0 0 3px #00f7ff, 0 0 5px #00f7ff, 0 0 20px #00f7ff;
+    }
+}
+
+.page-index .imagenNosotras {
+    position: relative;
+    width: 100%;
+}
+
+/* Texto girado */
+.page-index .textoNosotras {
+    transform: rotateY(180deg);
+    background-position: top;
+    padding: 4rem;
+    color: white;
+    overflow: hidden;
+    z-index: 2;
+}
+.page-index .fondoNosotras {
+    background-image: url('/storage/images/index/Nosotras.png');
+    background-size: cover;
+    background-position: top;
+    height: 80vh;
+}
+
+.page-index .textoNosotras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.page-index .textoNosotras p{
+    width: 80%;
+    margin-left: 10%;
+    color: black;
+    padding: 3rem;
+    background-color: #e1fafa;
+}
+.page-index .textoNosotras h1{
+    margin-left: 10%;
+    font-size: 280%;
+    text-shadow: black 1px 1px;
+}
+/* Difuminar imagen fondo */
+.page-index .textoNosotras::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+    transform: scale(1.05);
+}
+
+/* FORMULARIO DE CONTACTO */
+.page-index #contacto {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding-left: 15%;
+}
+.page-index #FormTitulo {
+    margin-top: 5rem;
+}
+.page-index #contacto h2 {
+    text-align: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.page-index #Formulario > div > div,
+.page-index #FormMensaje,
+.page-index #FormPolitica,
+.page-index #FormComunicaciones {
+    margin-bottom: 1.5rem;
+}
+
+.page-index #FormVarios {
+    display: flex;
+    flex-direction: row;
+}
+
+.page-index #FormNombre,
+.page-index #FormTelf{
+    padding-right: 5rem;
+}
+/* Estilos transparentes */
+.page-index form input:not([type="checkbox"]):not([type="radio"]),
+.page-index form textarea {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1.5px solid #74C2E1;
+    border-radius: 7px;
+    padding: 0.8rem 0.9rem;
+    font-size: 0.9rem;
+    width: 100%;
+    color: white;
+}
+
+.page-index form input::placeholder,
+.page-index form textarea::placeholder {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Check box */
+/*
+.page-index form label {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.8rem;
+    width: fit-content;
+}
+*/
+.page-index form label {
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.9rem;
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 0.8rem;
+
+}
+.page-index #FormPolitica {
+    margin-right: 5rem;
+}
+.page-index .marcadores {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* tamaño checkbox */
+.page-index #FormPolitica input[type="checkbox"],
+.page-index #FormComunicaciones input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    min-width: 16px;
+    min-height: 16px;
+    padding: 0;
+    margin: 0;
+    border-radius: 3px;
+    border: 2px solid #74C2E1;
+    background: transparent;
+    accent-color: #74C2E1;
+}
+
+.page-index #FormPolitica input[type="checkbox"]:checked,
+.page-index #FormComunicaciones input[type="checkbox"]:checked {
+    background-color: #0191C8;
+    border-color: #0191C8;
+}
+
+/* Boton envio */
+.page-index form button {
+    background-color: #0191C8;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transform: scale(0.8);
+}
+
+.page-index form button:hover {
+    transition: 0.8s;
+    background-color: #2c3e50;
+}
+/* Limpiar */
+.page-index .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Politica de privacidad ventana */
+.page-index .politica-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    line-height: 1.3;
+}
+
+.page-index .politica-modal {
+    background: #fff;
+    padding: 2rem;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    border-radius: 8px;
+    position: relative;
+    text-align: justify;
+}
+
+.page-index .politica-cerrar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: red;
+}
+
+
+/* RESPONOSIVE  */
+@media (max-width: 1440px) {
+    .page-index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-index #TituloPrincipal {
+        font-size: 3.5rem;
+    }
+    .page-index #Eslogan {
+        font-size: 1.6rem;
+    }
+    .page-index .info, .page-index .ventajas {
+        padding: 2rem;
+    }
+}
+
+/*  Portatil medio */
+@media (max-width: 1366px) {
+    .page-index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-index #TituloPrincipal {
+        font-size: 3rem;
+    }
+    .page-index .textoNosotras h1 {
+        font-size: 2.2rem;
+    }
+}
+
+/*  Tablet o movil grande */
+@media (max-width: 1024px) {
+    .page-index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .page-index .info,
+    .page-index .imagenMano,
+    .page-index .edificioAlto,
+    .page-index .ventajas {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1.5rem;
+    }
+
+    .page-index #info-mano,
+    .page-index #edificio-ventajas {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .page-index .textoNosotras p {
+        width: 90%;
+        padding: 1.5rem;
+        margin: 1rem auto;
+    }
+
+    .page-index .textoNosotras h1 {
+        font-size: 2rem;
+    }
+
+    .page-index .contenedorGirado{
+
+    }
+    .page-index .contenedorGirado,
+    .page-index .imagenNosotras,
+    .page-index .textoNosotras {
+        height: auto;
+    }
+
+    .page-index #TituloPrincipal {
+        font-size: 2.6rem;
+    }
+
+    .page-index #Eslogan {
+        font-size: 1.3rem;
+    }
+    .page-index .textoNosotras {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100vw;
+        overflow-x: hidden;
+        padding: 2rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .page-index .textoNosotras p {
+        width: 100%;
+        max-width: 100%;
+        padding: 1.5rem;
+        margin: 1rem 0;
+        line-height: 1.6;
+        font-size: 1rem;
+        text-align: justify;
+        box-sizing: border-box;
+    }
+
+    .page-index .textoNosotras h1 {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}
+
+/*  Moviles grandes */
+@media (max-width: 768px) {
+    .page-index {
+        width: 100%;
+        /*overflow-x: hidden;*/
+        margin: 0;
+        padding: 0;
+    }
+    .page-index .titulo {
+        height: auto;
+        padding: 2rem 1rem;
+    }
+
+    .page-index #TituloPrincipal {
+        font-size: 2.2rem;
+    }
+
+    .page-index #Eslogan {
+        font-size: 1.2rem;
+    }
+
+    .page-index #Nosotras {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .page-index .imagenNosotras img {
+        height: auto;
+    }
+
+    .page-index .textoNosotras p {
+        font-size: 0.95rem;
+    }
+
+    .page-index .marcadores {
+        flex-direction: column;
+    }
+
+    .page-index #FormVarios {
+        flex-direction: column;
+    }
+
+    .page-index #FormNombre,
+    .page-index #FormTelf,
+    .page-index #FormCorreo {
+        padding-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .page-index #contacto {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .page-index form button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    .page-index .politica-modal {
+        max-width: 90%;
+    }
+
+    .page-index .textoNosotras h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/*  Moviles medianos */
+@media (max-width: 480px) {
+    .page-index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-index #TituloPrincipal {
+        font-size: 2rem;
+    }
+
+    .page-index #Eslogan {
+        font-size: 1rem;
+    }
+
+    .page-index .textoNosotras h1 {
+        font-size: 1.6rem;
+    }
+
+    .page-index .textoNosotras p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
+
+    .page-index form input, .page-index form textarea {
+        font-size: 0.9rem;
+    }
+
+    .page-index form label {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+}
+
+/* Moviles pequeños */
+@media (max-width: 360px) {
+
+    .page-index {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-index #TituloPrincipal {
+        font-size: 1.6rem;
+    }
+
+    .page-index #Eslogan {
+        font-size: 0.9rem;
+    }
+
+    .page-index .textoNosotras p {
+        padding: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .page-index .textoNosotras h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-index form button {
+        font-size: 0.95rem;
+    }
+}
+
+/* Animaciones  */
+.page-index {
+    overflow-x: hidden;
+}
+/*
+.page-index .titulo, .page-index #info-mano, .page-index #edificio-ventajas, .page-index #Nosotras, .page-index #contacto, .page-index .footer {
+    scroll-snap-align: start;
+
+}*/
+/*
+.page-index .subida {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.page-index .subida.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+*/
+
+/* Cabecera fija solo en Index */
+.page-index nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.page-index .titulo {
+    margin-top: 60px;
+>>>>>>> 3b768a7 (TFG Terminado y desplegado)
+}

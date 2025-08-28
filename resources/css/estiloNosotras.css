@@ -1,0 +1,43 @@
+/* estiloNosotras.css2 */
+
+.nosotras-hero {
+    background-image: url('/images/fondo-nosotras.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 3rem;
+}
+
+.nosotras-contenido {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4rem;
+    gap: 2rem;
+}
+
+.nosotras-texto {
+    flex: 1;
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.nosotras-imagen {
+    flex: 1;
+}
+
+.nosotras-imagen img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.nosotras-footer {
+    background-color: #222;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
