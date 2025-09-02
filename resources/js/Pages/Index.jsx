@@ -280,7 +280,44 @@ export default function Index() {
                     <div className="politica-modal">
                         <button className="politica-cerrar" onClick={() => setVerPolitica(false)}>&times;</button>
                         <h2>Política de Privacidad</h2>
-                        <p>En Inmobiliaria CES nos tomamos muy en serio tu privacidad...</p>
+                        <p>
+                        En Inmobiliaria CES nos tomamos muy en serio tu privacidad.<br/><br/>
+                        Esta Política de Privacidad explica cómo recopilamos, usamos y protegemos tus datos
+                        personales cuando te pones en contacto con nosotras, ya sea a través de este sitio web, por
+                        teléfono, correo electrónico o en persona.<br/><br/>
+                        <strong>1. ¿Quién es la responsable del tratamiento de tus datos?</strong><br/>
+                        Somos Inmobiliaria CES, dos profesionales del sector inmobiliario con más de diez años de
+                        experiencia. Nos puedes contactar a través de nuestro formulario de contacto, por correo
+                        electrónico o personalmente en nuestras oficinas.<br/><br/>
+                        <strong>2. ¿Qué datos recogemos?</strong><br/>
+                        Solo recogemos los datos que nos proporcionas directamente, como tu nombre, teléfono, correo
+                        electrónico y cualquier información que decidas compartir con nosotras en el formulario de
+                        contacto.<br/><br/>
+                        <strong>3. ¿Con qué finalidad tratamos tus datos?</strong><br/>
+                        Utilizamos tus datos exclusivamente para responder a tus consultas, enviarte información
+                        relacionada con los inmuebles o servicios que solicitas, y mantener una comunicación clara y
+                        útil contigo.<br/><br/>
+                        <strong>4. ¿Cuánto tiempo conservamos tus datos?</strong><br/>
+                        Conservaremos tus datos únicamente el tiempo necesario para gestionar tu solicitud o
+                        mientras exista una relación comercial o de interés por tu parte.<br/><br/>
+                        <strong>5. ¿Compartimos tus datos?</strong><br/>
+                        No compartimos tus datos con terceros, salvo obligación legal o si es imprescindible para la
+                        prestación de un servicio que nos hayas solicitado expresamente (por ejemplo, gestionar una
+                        cita con un notario).<br/><br/>
+                        <strong>6. ¿Cuáles son tus derechos?</strong><br/>
+                        Puedes ejercer tus derechos de acceso, rectificación, cancelación, oposición, limitación del
+                        tratamiento y portabilidad en cualquier momento. Para ello, solo tienes que contactarnos y
+                        atenderemos tu solicitud con la mayor transparencia.<br/><br/>
+                        <strong>7. Seguridad</strong><br/>
+                        Aplicamos medidas técnicas y organizativas para proteger tus datos personales y evitar
+                        accesos no autorizados o mal uso de la información.<br/><br/>
+                        <strong>8. Cambios en la política</strong><br/>
+                        Nos reservamos el derecho a actualizar esta Política de Privacidad. Si realizamos algún
+                        cambio importante, lo comunicaremos a través de esta página.<br/><br/>
+                        Gracias por confiar en nosotras. En Inmobiliaria CES creemos en una inmobiliaria más humana,
+                        cercana y transparente.<br/><br/>
+                        Si tienes cualquier duda sobre esta política, no dudes en escribirnos.
+                    </p>
                     </div>
                 </div>
             )}
